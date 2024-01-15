@@ -1,0 +1,9 @@
+model: resnetse
+log_input: True
+encoder_type: SAP
+trainfunc: focal
+save_path: exps/resnetse_focal
+nClasses: 1211
+batch_size: 64
+scale: 30
+margin: 0.3

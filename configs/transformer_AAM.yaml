@@ -1,0 +1,13 @@
+model: transformer
+encoder_type: ECA
+nOut: 512
+sinc_stride: 10
+max_frames: 300
+batch_size: 64
+eval_frames: 300
+trainfunc: aamsoftmax
+lr_decay: 0.75
+weight_decay: 5e-05
+max_seg_per_spk: 400
+augment: False
+save_path: exps/transformer_AAM
