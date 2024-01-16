@@ -9,6 +9,6 @@ The test lists for VoxCeleb1 can be downloaded from [here](https://mm.kaist.ac.k
 ### Train
 train the vot with AAMF
 ```
-python ./trainSpeakerNet.py --config ./configs/VOT-focal.yaml
+python ./trainSpeakerNet.py --config ./configs/VOT_focal.yaml
 ```
 * code reference from https://github.com/clovaai/voxceleb_trainer
