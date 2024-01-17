@@ -3,7 +3,7 @@ The repository contains a framework called VOT, which is used to train the speak
 we  provide Voice-Transformer architecture：
 ![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/3.jpg)  
 where the DFSMN model is shown below：
-![model-sym](/picture/4.jpg)  
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/4.jpg)  
 ### Dependencies
 ```
 pip install -r requirements.txt
@@ -31,9 +31,9 @@ In addition to the Python dependencies, `wget` and `ffmpeg` must be installed on
 
 ### Train
 We trained on normal serial transformer encoder， serial voice encoder，parallel voice encoder：
-![model-sym](/picture/2.jpg)
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/2.jpg)
 With respect to the series and parallel structures, we took four variants of the experiment respectively：
-![model-sym](/picture/5.jpg)  
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/5.jpg)  
 train the VOT with AM
 ```
 python ./trainSpeakerNet.py --config ./configs/VOT_AM.yaml
@@ -59,13 +59,13 @@ python ./trainSpeakerNet.py --config ./configs/VOT_focal.yaml
 python ./trainSpeakerNet.py --eval --config ./configs/VOT_focal.yaml --initial_model exps/VOT_focal/model/model000000007.model
 ```
 We demonstrate the efficiency of DFSMN on speaker verification tasks：
-![model-sym](/picture/6.jpg)
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/6.jpg)
 We show that the parallel structure requires fewer parameters and is experimentally better
-![model-sym](/picture/7.jpg)
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/7.jpg)
 We trained on Voxceleb1 training set and test on the Voxceleb1 test set (there are no common speakers)：
-![model-sym](/picture/8.jpg)
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/8.jpg)
 We trained on Voxceleb1 training set and test on the  Cn-Celeb2 test set (there are no common speakers)：
-![model-sym](/picture/9.jpg)
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/9.jpg)
 ### generate your own trainlist
 Simply modify the path in the file and run it to produce a training file that matches the format.
 ```
