@@ -3,15 +3,16 @@ import os
 import torch
 import torchaudio
 
-output_images_folder = "C:/Users/why/Desktop/test"  # Directory to save images
+output_images_folder = "path1"  # Directory to save images
+data_path_list ="path2"         # Directory to input videos
 
 all_frames = 0
-all_mean_stat = torch.zeros(112)  # feat_dim = 80  (fbank)
+all_mean_stat = torch.zeros(112)  
 all_var_stat = torch.zeros(112)
 
 
 
-data_path_list ="C:/Users/why/Desktop/aaa"
+
 
 for root, dirs, files in os.walk(data_path_list):
     rel_path = os.path.relpath(root, data_path_list)
@@ -38,4 +39,4 @@ for root, dirs, files in os.walk(data_path_list):
             os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
             output_path = os.path.join(output_folder, output_filename)
             plt.savefig(output_path,bbox_inches="tight", pad_inches=0)
-            plt.show()  # Close the plot to avoid displaying all plots at once
+            plt.show() 
