@@ -65,8 +65,8 @@ parser.add_argument('--save_path',      type=str,   default="exps/exp1", help='P
 ## Training and test data
 parser.add_argument('--train_list',     type=str,   default="b.txt",  help='Train list')
 parser.add_argument('--test_list',      type=str,   default="veri_test1.txt",   help='Evaluation list')
-parser.add_argument('--train_path',     type=str,   default="/home/happy/voxceleb_trainer-master/data/voxceleb1", help='Absolute path to the train set')
-parser.add_argument('--test_path',      type=str,   default="/home/happy/voxceleb_trainer-master/data/vox1_test_wav/wav", help='Absolute path to the test set')
+parser.add_argument('--train_path',     type=str,   default="path1", help='Absolute path to the train set')
+parser.add_argument('--test_path',      type=str,   default="path2", help='Absolute path to the test set')
 parser.add_argument('--musan_path',     type=str,   default="data/musan_split", help='Absolute path to the test set')
 parser.add_argument('--rir_path',       type=str,   default="data/RIRS_NOISES/simulated_rirs", help='Absolute path to the test set')
 
