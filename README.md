@@ -78,6 +78,6 @@ Need to change the path inside the file
 python Feature_Visualization.py
 ```
 we  provide the results of feature visualization of FBANK and MFCC feature
-![model-sym](/picture/1.jpg)
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/1.jpg)
 
 * code reference from https://github.com/clovaai/voxceleb_trainer
