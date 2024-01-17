@@ -63,7 +63,7 @@ Need to change the path inside the file
 ```
 python Feature_Visualization.py
 ```
-we  provide the results of feature visualization of FBANK and MFCC feature![image](https://github.com/luckyerr/Voice-Transformer_Speaker-Verification/tree/main/picture/1.jpg)
+we  provide the results of feature visualization of FBANK and MFCC feature
 ![model-sym](/picture/1.jpg)
 
 * code reference from https://github.com/clovaai/voxceleb_trainer
