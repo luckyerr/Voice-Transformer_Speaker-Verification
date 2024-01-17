@@ -1,5 +1,9 @@
 # VOT--Voice Transformer
-The repository contains a framework called VOT, which is used to train the speaker verification model. The model consists of multiple transformers in parallel, and the outputs of these transformers are adaptively combined. Deep fusion semantic memory network (DFSMN) is integrated into the attention part of these transformers to capture long-distance information and enhance local dependence. There is also a new loss function called Additional Angular Margin Focusing Loss (AAMF) to solve the problem of hard sample mining.
+The repository contains a framework called VOT, which is used to train the speaker verification model. The model consists of multiple transformers in parallel, and the outputs of these transformers are adaptively combined. Deep fusion semantic memory network (DFSMN) is integrated into the attention part of these transformers to capture long-distance information and enhance local dependence. There is also a new loss function called Additional Angular Margin Focusing Loss (AAMF) to solve the problem of hard sample mining.  
+we  provide Voice-Transformer architecture：
+![model-sym](/picture/3.jpg)  
+where the DFSMN model is shown below：
+![model-sym](/picture/4.jpg)  
 ### Dependencies
 ```
 pip install -r requirements.txt
@@ -26,7 +30,10 @@ The test list for Cn-Celeb2 can be downloaded from [here](https://www.robots.ox.
 In addition to the Python dependencies, `wget` and `ffmpeg` must be installed on the system.
 
 ### Train
-
+We trained on normal serial transformer encoder， serial voice encoder，parallel voice encoder：
+![model-sym](/picture/2.jpg)
+With respect to the series and parallel structures, we took four variants of the experiment respectively：
+![model-sym](/picture/5.jpg)  
 train the VOT with AM
 ```
 python ./trainSpeakerNet.py --config ./configs/VOT_AM.yaml
@@ -51,7 +58,14 @@ python ./trainSpeakerNet.py --config ./configs/VOT_focal.yaml
 ```
 python ./trainSpeakerNet.py --eval --config ./configs/VOT_focal.yaml --initial_model exps/VOT_focal/model/model000000007.model
 ```
-
+We demonstrate the efficiency of DFSMN on speaker verification tasks：
+![model-sym](/picture/6.jpg)
+We show that the parallel structure requires fewer parameters and is experimentally better
+![model-sym](/picture/7.jpg)
+We trained on Voxceleb1 training set and test on the Voxceleb1 test set (there are no common speakers)：
+![model-sym](/picture/8.jpg)
+We trained on Voxceleb1 training set and test on the  Cn-Celeb2 test set (there are no common speakers)：
+![model-sym](/picture/9.jpg)
 ### generate your own trainlist
 Simply modify the path in the file and run it to produce a training file that matches the format.
 ```
