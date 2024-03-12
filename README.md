@@ -59,13 +59,10 @@ python ./trainSpeakerNet.py --config ./configs/VOT_focal.yaml
 python ./trainSpeakerNet.py --eval --config ./configs/VOT_focal.yaml --initial_model exps/VOT_focal/model/model000000007.model
 ```
 We demonstrate the efficiency of DFSMN on speaker verification tasks：
-![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/6.jpg)
 We show that the parallel structure requires fewer parameters and is experimentally better
-![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/7.jpg)
-We trained on Voxceleb1 training set and test on the Voxceleb1 test set (there are no common speakers)：
-![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/8.jpg)
-We trained on Voxceleb1 training set and test on the  Cn-Celeb2 test set (there are no common speakers)：
-![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/9.jpg)
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/g.jpg)
+We trained on Voxceleb1 training set and test on the Voxceleb1 and Cn-Celeb2 test set (there are no common speakers)：
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/f.jpg)
 ### generate your own trainlist
 Simply modify the path in the file and run it to produce a training file that matches the format.
 ```
