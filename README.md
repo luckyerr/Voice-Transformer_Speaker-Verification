@@ -23,8 +23,10 @@ In order to use data augmentation, also run:
 python ./dataprep.py --save_path data --augment
 ```
 If you still want to test on the Cn-Celeb2 dataset, click on the download link below
-The dataset for Cn-Celeb2 can be download from [here](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/data_workshop_2022/Track3_validation_data.zip). 
-The test list for Cn-Celeb2 can be downloaded from [here](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/data_workshop_2022/Track3_validation_trials.txt). 
+The dataset for Cn-Celeb2 can be download from
+[here](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/data_workshop_2022/Track3_validation_data.zip). 
+The test list for Cn-Celeb2 can be downloaded from
+[here](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/data_workshop_2022/Track3_validation_trials.txt). 
 
 
 In addition to the Python dependencies, `wget` and `ffmpeg` must be installed on the system.
