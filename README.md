@@ -3,7 +3,7 @@ The repository contains a framework called VOT, which is used to train the speak
 we  provide Voice-Transformer architecture：
 ![model-sym]((https://anonymous.4open.science/r/VOT-C994/picture/3.jpg)
 where the DFSMN model is shown below：
-![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/4.jpg)  
+![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/e.jpg)  
 ### Dependencies
 ```
 pip install -r requirements.txt
