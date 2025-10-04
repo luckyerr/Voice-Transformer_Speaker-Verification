@@ -83,3 +83,4 @@ we  provide the results of feature visualization of FBANK and MFCC feature
 ![model-sym](https://anonymous.4open.science/r/VOT-C994/picture/1.jpg)
 
 * code reference from https://github.com/clovaai/voxceleb_trainer
+* paper
